@@ -8,4 +8,7 @@ def mul(x, y):
     return x * y
 
 def div(x, y):
-    return x / y
+    try:
+        return x / y
+    except ZeroDivisionError:
+        return "Buta vagy"
